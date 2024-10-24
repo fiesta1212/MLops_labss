@@ -16,7 +16,7 @@ PYTHON_INTERPRETER = python
 requirements:
 	$(PYTHON_INTERPRETER) -m pip install -U pip
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
-	
+
 
 
 
@@ -43,15 +43,15 @@ format:
 .PHONY: sync_data_down
 sync_data_down:
 	aws s3 sync s3://my_bucket/data/ \
-		data/ 
-	
+		data/
+
 
 ## Upload Data to storage system
 .PHONY: sync_data_up
 sync_data_up:
 	aws s3 sync data/ \
-		s3://my_bucket/data 
-	
+		s3://my_bucket/data
+
 
 
 
@@ -60,7 +60,7 @@ sync_data_up:
 create_environment:
 	@bash -c "if [ ! -z `which virtualenvwrapper.sh` ]; then source `which virtualenvwrapper.sh`; mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER); else mkvirtualenv.bat $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER); fi"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
-	
+
 
 
 
