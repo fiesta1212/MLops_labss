@@ -1,24 +1,36 @@
 # mlops_labs2024
 
 ## Установка окружения
-1. Клонировать репозиторий:
+Клонировать репозиторий:
    ```bash
    git clone https://github.com/fiesta1212/MLops_labss.git
+   ```
+Рабочая директория:
+   ```bash
    cd MLOps_labss/mlops_project1
    ```
-2. Создать виртуальное окружение:
+Установить зависимости:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate  # Windows
+   poetry install
    ```
-3. Установить зависимости:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Установить pre-commit:
+Установить pre-commit:
    ```bash
    pre-commit install
+   ```
+
+Запуск docker-compose:
+   ```bash
+   docker-compose up -d
+   ```
+
+Установка прав:
+   ```bash
+   chmod +x lab3/bashscript/*.sh lab3/pipeline.sh
+   ```
+
+Запуск pipeline:
+   ```bash
+   ./lab3/pipeline.sh
    ```
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
@@ -26,6 +38,7 @@
 
 A short description of the project.
 
+Датасет взят от сюда: https://www.kaggle.com/competitions/customer-churn-prediction-2020
 ## Project Organization
 
 ```
