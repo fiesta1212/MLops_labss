@@ -17,4 +17,6 @@ tqdm
 typer
 mypy
 pre-commit
+boto3
+types-boto3
 -e .
