@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.12"
 awscli = "^1.36.3"
 black = "^24.10.0"
 flake8 = "^7.1.1"
@@ -29,6 +29,8 @@ mypy = "^1.13.0"
 pre-commit = "^4.0.1"
 boto3 = "^1.35.62"
 types-boto3 = "^1.0.2"
+mlflow = "^2.18.0"
+omegaconf = "^2.3.0"
 
 
 [build-system]

@@ -9,28 +9,20 @@
    ```bash
    cd MLOps_labss/mlops_project1
    ```
-Установить зависимости:
-   ```bash
-   poetry install
-   ```
+
 Установить pre-commit:
    ```bash
    pre-commit install
    ```
 
-Запуск docker-compose:
-   ```bash
-   docker-compose up -d
-   ```
-
 Установка прав:
    ```bash
-   chmod +x lab3/bashscript/*.sh lab3/pipeline.sh
+   chmod +x bash/*.sh pipeline.sh
    ```
 
 Запуск pipeline:
    ```bash
-   ./lab3/pipeline.sh
+   ./pipeline.sh
    ```
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
