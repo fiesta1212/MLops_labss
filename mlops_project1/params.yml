@@ -1,0 +1,13 @@
+random_search:
+  - n_estimators:
+      type: randint
+      range: [10, 200]  # Диапазон для количества деревьев
+  - max_depth:
+      type: randint
+      range: [1, 20]  # Диапазон для максимальной глубины деревьев
+  - min_samples_split:
+      type: randint
+      range: [2, 10]  # Диапазон для минимального количества образцов для разделения узла
+  - min_samples_leaf:
+      type: randint
+      range: [1, 4]  # Диапазон для минимального количества образцов в листе
